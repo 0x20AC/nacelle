@@ -1,0 +1,574 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar {
+        width: 12px;
+      }
+    
+      ::-webkit-scrollbar-thumb {
+        background-color: rgb(185,204,0);
+        border-radius: 20px;
+        border: 3px solid white;
+      }
+}
+
+body {
+    font-family: sans-serif;
+    background: $backgound-color-base;
+}
+
+//--------------Navbar--------------
+
+.navbar {
+
+    .nav-list {
+        padding: 1.5rem 0;
+        @include flexMid;
+    }
+    
+    .nav-item {
+        margin-left: 5em;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .nav-item a {
+        letter-spacing: -.5px;
+        color: black;
+    }
+
+    .nav-item button {
+        height: 45px;
+        width: 163px;
+        //border: 2px solid;
+        border: none;
+        color: white;
+        //background: $backgound-color-base;
+        background-color: rgb(185,204,0);
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 50px;
+    }
+
+    .nav-item:first-child {
+        margin-left: 4rem;
+    }  
+
+    .nav-item:last-child {
+        margin-right: 4rem;
+        margin-left: auto;
+    }
+}
+
+//----------------------------------
+
+//-------------Section 1------------
+
+.first-section .container {
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    .left h1 {
+        font-size: 4.25em;
+        max-width: 900px;
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+        line-height: 80px;
+    }
+
+    .left p {
+        color:  #525253;
+        max-width: 400px;
+        margin: 30px 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .left button {
+        width: 140px;
+        height: 45px;
+        border: none;
+        background: rgb(185,204,0);
+        color: white;
+        cursor: pointer;
+        margin-top: 20px;
+        font-family: 'Poppins', sans-serif;
+
+        i {
+            margin-left: 10px;
+            font-size: 10px;
+        }
+    }
+
+    .right img {
+        margin-left: 4rem;
+        width: 700px;
+        height: 700px;
+        animation : bounce 5s infinite ease-in-out;
+    }
+}
+
+//----------------------------------
+
+//-------------Section 2------------
+
+.second-section {
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-top: 40px;
+        font-size: 2em;
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Poppins', sans-serif;
+        max-width: 600px;
+        color:  #525253;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .card {
+        height: 300px;
+        width: 280px;
+        border-radius: 15px;
+        margin-top: 60px;
+
+        .top img {
+            width: 125px;
+            height: 125px;
+            position: relative;
+            left: 28%;
+        }
+
+        .bottom {
+            margin: 0 20px;
+
+            h1 {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 1.5em;
+            }
+        }
+
+        .description {
+            text-align: center;
+            margin-top: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            color:  #525253;
+        }
+    }
+}
+
+//----------------------------------
+
+//-------------Section 3------------
+
+.third-section .container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 9em;
+
+    .left img {
+        margin-right: 4rem;
+        width: 400px;
+        height: 400px;
+        animation : bounce 5s infinite ease-in-out;
+    }
+
+    .right {
+
+        margin-left: 5em;
+
+        h1 {
+            font-size: 2em;
+            font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+        }
+
+        p {
+            color:  #525253;
+            max-width: 600px;
+            margin: 30px 0;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+}
+
+//----------------------------------
+
+//-------------Section 4------------
+
+.fourth-section {
+
+    width: 100%;
+    height: 900px;
+    background-color: rgba(184, 204, 0, 0.733);
+    margin-top: 9em;
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-top: 40px;
+        font-size: 2em;
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    
+    .card {
+        height: 300px;
+        width: 600px;
+        margin-top: 60px;
+        border: 1px solid;
+        border-radius: 15px;
+        background-color: white;
+
+        .top img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: relative;
+            margin-top: 20px;
+            left: 43.5%;
+        }
+
+        .bottom {
+            margin: 0 20px;
+
+            h1 {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 1.5em;
+            }
+
+            .description {
+                text-align: center;
+                margin-top: 10px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+                color:  #525253;
+            }
+        }
+    }
+}
+
+//----------------------------------
+
+//-------------Section 5-----------
+
+.fifth-section .container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 9em;
+
+    .left h1 {
+        font-size: 2em;
+        max-width: 900px;
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+        line-height: 80px;
+    }
+
+    .left p {
+        color:  #525253;
+        max-width: 400px;
+        margin: 30px 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .right img {
+        margin-left: 8rem;
+        width: 700px;
+        height: 700px;
+        animation : bounce 5s infinite ease-in-out;
+    }
+}
+
+//----------------------------------
+
+//-------------Section 6-----------
+
+.sixth-section {
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title h1 {
+        margin-top: 40px;
+        font-size: 2em;
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+        text-align: center;
+    }
+
+    .title p {
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Poppins', sans-serif;
+        max-width: 600px;
+        color:  #525253;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        max-width: 1200px;
+        margin: 0 auto;  
+    }
+    
+    .card {
+        height: 450px;
+        width: 280px;
+        margin-top: 60px;
+        position: relative;
+
+        .top img {
+            width: 300px;
+            height: 169px;
+        }
+
+        .bottom {
+            margin: 0 20px;
+
+            h1 {
+                margin-top: 20px;
+                font-size: 1.2em;
+                font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+            }
+
+            .description {
+                margin-top: 10px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 13px;
+                color:  #525253;
+            }
+        }
+
+        .read-more h2 {
+            font-size: 1em;
+            position: absolute;
+            margin: 0 20px;
+            bottom: 10px;
+            font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+            color: black;
+
+            i {
+                margin-left: 10px;
+                font-size: 12px;
+            }
+        }
+
+        .read-more h2:hover {
+            color: rgb(185,204,0);
+        }
+    }      
+}
+
+//----------------------------------
+
+//--------------Footer--------------
+
+footer {
+    margin-top: 100px;
+    min-height: 300px;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: white;
+    }
+    
+    .left{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+//----------------------------------
+
+//------------Animation-------------
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+//----------------------------------
+
+//------------Responsive------------
+
+@media (max-width: 1300px) {
+
+    .first-section .container {
+        flex-direction: column;
+    
+        .left {
+            margin: 40px 35px;
+            
+            h1 {
+            font-size: 3em;
+            max-width: 800px;
+            font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+            line-height: 70px;
+            }
+        }
+
+        .right img {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+        }
+    }
+
+    .third-section .container {
+        flex-direction: column;
+
+        .left img {
+            width: 60%;
+            animation : bounce 5s infinite ease-in-out;
+        }
+    
+        .right {
+            text-align: center;
+    
+            h1 {
+                font-size: 2em;
+                font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+            }
+    
+            p {
+                color:  #525253;
+                max-width: 600px;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+    }
+}
+
+@media (max-width: 1060px) {
+    .navbar {
+        
+        .nav-item {
+            font-size: 15px;
+        }
+    
+        .nav-item button {
+            display: none;
+        }
+
+        .nav-item img {
+            width: 80%;
+        }
+    }
+} 
+
+@media (max-width: 800px) {
+    .navbar {
+
+        .nav-list {
+            @include flexMid;
+        }
+        
+        .nav-item {
+            font-size: 10px;
+        }
+
+        .nav-item img {
+            width: 80%;
+        }
+    }
+
+    .first-section .container {
+        flex-direction: column;
+    
+        .left {
+            margin: 40px 35px;
+            
+            h1 {
+            font-size: 2em;
+            line-height: 50px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+} 
+
+@media (max-width: 500px) {
+    .navbar {
+
+        .nav-item img {
+            width: 100%;
+        }
+    }
+
+    .left button {
+        width: 80%;
+
+        i {
+            margin-left: 10px;
+            font-size: 10px;
+        }
+    }
+} 
+
+//----------------------------------

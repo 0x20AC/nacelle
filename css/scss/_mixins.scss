@@ -1,0 +1,10 @@
+@mixin flexMid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexTop {
+    display: flex;
+    justify-content: center;
+}
